@@ -29,41 +29,36 @@ const Experience = () => {
   ]);
 
   return (
-    <div className="p-6">
-      <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">
+    <div className="p-6 bg-gray-50 dark:bg-gray-900">
+      <h2 className="text-3xl font-bold text-center mb-10 text-gray-800 dark:text-gray-100">
         Experience
       </h2>
 
-      {/* Experience Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {myExperiences.map((exp, index) => (
           <div
             key={index}
-            className="relative bg-white dark:bg-gray-900 shadow-lg rounded-xl p-6 border border-gray-200 dark:border-gray-700"
+            className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
           >
-            {/* Employer Logo with Background Fix */}
             <div className="flex items-center space-x-4 mb-4">
-              <div className="w-16 h-16 flex items-center justify-center bg-gray-100 rounded-lg shadow-md border border-gray-300 dark:border-gray-600">
-                <img
-                  src={exp.logo}
-                  alt={exp.company}
-                  className="w-12 h-12 object-contain"
-                />
-              </div>
+              <img
+                src={exp.logo}
+                alt={exp.company}
+                className="w-12 h-12 object-contain"
+              />
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
+                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
                   {exp.role}
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400">
                   {exp.company}
                 </p>
-                <p className="text-xs text-gray-500 dark:text-gray-400 italic">
+                <p className="text-sm text-gray-500 dark:text-gray-400 italic">
                   {exp.duration}
                 </p>
               </div>
             </div>
 
-            {/* Job Description */}
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 text-sm">
               {exp.description.map((point, i) => (
                 <li key={i} className="mb-1">

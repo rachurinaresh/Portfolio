@@ -40,10 +40,6 @@ const Skills = () => {
           img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
         },
         {
-          name: "Angular Material",
-          img: "https://material.angular.io/assets/images/material-angular.svg",
-        },
-        {
           name: "Material UI",
           img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
         },
@@ -93,6 +89,10 @@ const Skills = () => {
           name: "MySQL",
           img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
         },
+        {
+          name: "Entity Framework",
+          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
+        },
       ],
     },
     {
@@ -101,10 +101,6 @@ const Skills = () => {
         {
           name: "VS Code",
           img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-        },
-        {
-          name: "Visual Studio",
-          img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg",
         },
         {
           name: "Git",
@@ -144,9 +140,9 @@ const Skills = () => {
   ]);
 
   return (
-    <div className="p-6">
+    <div className="p-6 bg-gray-50 dark:bg-gray-900">
       <motion.h2
-        className="text-2xl font-semibold text-center mb-6"
+        className="text-3xl font-bold text-center text-gray-800 dark:text-gray-100 mb-8"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -163,14 +159,14 @@ const Skills = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.4, delay: index * 0.1 }}
         >
-          <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-3">
+          <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
             {skillCategory.category}
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
             {skillCategory.items.map((skill, i) => (
               <motion.div
                 key={i}
-                className="flex flex-col items-center p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md transition-transform hover:scale-110 cursor-pointer"
+                className="flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md transition-transform hover:scale-105 cursor-pointer"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}

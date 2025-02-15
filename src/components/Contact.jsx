@@ -63,83 +63,79 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full border p-5">
-      <h2 className="text-lg font-semibold mb-4">Contact Me</h2>
-      <div className="border flex justify-center">
-        <div className="border p-5 w-full max-w-md">
-          <form ref={form} onSubmit={handleSendEmail}>
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-sm font-semibold text-gray-900"
-              >
-                Your Name
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                autoComplete="given-name"
-                value={userName}
-                onChange={(e) => setUserName(e.target.value)}
-                className="block w-full border rounded-md px-3 py-2 mt-1 text-gray-900 focus:outline-indigo-600"
-              />
-              {errors.userName && (
-                <p className="text-red-500 text-sm">{errors.userName}</p>
-              )}
-            </div>
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-50 dark:bg-gray-900 px-6">
+      <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-6">
+        Contact Me
+      </h2>
 
-            <div className="mt-4">
-              <label
-                htmlFor="email"
-                className="block text-sm font-semibold text-gray-900"
-              >
-                Email
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                autoComplete="email"
-                value={userEmail}
-                onChange={(e) => setUserEmail(e.target.value)}
-                className="block w-full border rounded-md px-3 py-2 mt-1 text-gray-900 focus:outline-indigo-600"
-              />
-              {errors.userEmail && (
-                <p className="text-red-500 text-sm">{errors.userEmail}</p>
-              )}
-            </div>
-
-            <div className="mt-4">
-              <label
-                htmlFor="message"
-                className="block text-sm font-semibold text-gray-900"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                value={userMessage}
-                onChange={(e) => setUserMessage(e.target.value)}
-                className="block w-full border rounded-md px-3 py-2 mt-1 text-gray-900 focus:outline-indigo-600"
-              />
-              {errors.userMessage && (
-                <p className="text-red-500 text-sm">{errors.userMessage}</p>
-              )}
-            </div>
-
-            <div className="mt-4">
-              <button
-                type="submit"
-                className="block w-full rounded-md bg-indigo-600 px-3 py-2 text-white font-semibold hover:bg-indigo-500 focus:outline-indigo-600"
-              >
-                Let's Talk
-              </button>
-            </div>
-          </form>
-        </div>
+      <div className="w-full max-w-lg bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+        <form ref={form} onSubmit={handleSendEmail} className="space-y-4">
+          <div>
+            <label
+              htmlFor="name"
+              className="block text-sm font-semibold text-gray-900 dark:text-gray-300"
+            >
+              Your Name
+            </label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              value={userName}
+              onChange={(e) => setUserName(e.target.value)}
+              className="block w-full border border-gray-300 dark:border-gray-600 rounded-md px-3 py-2 mt-1 text-gray-900 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            {errors.userName && (
+              <p className="text-red-500 text-sm">{errors.userName}</p>
+            )}
+          </div>
+          <div>
+            <label
+              htmlFor="email"
+              className="block text-sm font-semibold text-gray-900 dark:text-gray-300"
+            >
+              Email Address
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              value={userEmail}
+              onChange={(e) => setUserEmail(e.target.value)}
+              className="block w-full border border-gray-300 dark:border-gray-600 rounded-md px-3 py-2 mt-1 text-gray-900 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            {errors.userEmail && (
+              <p className="text-red-500 text-sm">{errors.userEmail}</p>
+            )}
+          </div>
+          <div>
+            <label
+              htmlFor="message"
+              className="block text-sm font-semibold text-gray-900 dark:text-gray-300"
+            >
+              Your Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows={4}
+              value={userMessage}
+              onChange={(e) => setUserMessage(e.target.value)}
+              className="block w-full border border-gray-300 dark:border-gray-600 rounded-md px-3 py-2 mt-1 text-gray-900 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            {errors.userMessage && (
+              <p className="text-red-500 text-sm">{errors.userMessage}</p>
+            )}
+          </div>
+          <div>
+            <button
+              type="submit"
+              className="w-full bg-blue-500 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-600 transition"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );
