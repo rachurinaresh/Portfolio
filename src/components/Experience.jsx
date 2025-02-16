@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { motion } from "framer-motion";
+import { useRef } from "react";
 
 const Experience = () => {
-  const [myExperiences] = useState([
+  const sectionRef = useRef(null);
+
+  const myExperiences = [
     {
       role: "Graduate Research Assistant",
       company: "University of Texas at Arlington",
@@ -13,6 +16,8 @@ const Experience = () => {
         "Scraped 50+ websites for scholar data using Selenium and Google Scholar API.",
         "Integrated GPT-4 for award eligibility prediction.",
       ],
+      gradient: "from-[#2A2D3E] to-[#475569]",
+      borderColor: "border-[#64748B]",
     },
     {
       role: "Software Engineer",
@@ -25,51 +30,79 @@ const Experience = () => {
         "Engineered a finance portal reducing manual processes by 60%.",
         "Designed comprehensive test cases improving platform reliability by 95%.",
       ],
+      gradient: "from-[#1E293B] to-[#334155]",
+      borderColor: "border-[#475569]",
     },
-  ]);
+  ];
 
   return (
-    <div className="p-6 bg-gray-50 dark:bg-gray-900">
-      <h2 className="text-3xl font-bold text-center mb-10 text-gray-800 dark:text-gray-100">
+    <motion.div
+      ref={sectionRef}
+      className="relative p-10 min-h-screen bg-gradient-to-br from-gray-900 to-black flex flex-col items-center"
+      initial={{ opacity: 0.8 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: false, amount: 0.3 }} // Ensures it replays every time the section is visible
+      transition={{ duration: 1.2, ease: "easeOut" }}
+    >
+      <motion.h2
+        className="text-4xl font-extrabold text-center mb-12 text-white"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
         Experience
-      </h2>
+      </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl">
         {myExperiences.map((exp, index) => (
-          <div
+          <motion.div
             key={index}
-            className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: false, amount: 0.3 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.2 }}
+            className={`relative p-10 rounded-2xl shadow-xl border ${exp.borderColor} backdrop-blur-xl bg-gradient-to-r ${exp.gradient} transition-transform transform hover:scale-105`}
           >
-            <div className="flex items-center space-x-4 mb-4">
-              <img
+            {/* Content */}
+            <div className="flex items-center space-x-4 mb-6">
+              <motion.img
                 src={exp.logo}
                 alt={exp.company}
-                className="w-12 h-12 object-contain"
+                className="w-16 h-16 object-contain bg-white p-2 rounded-full shadow-md"
+                initial={{ scale: 0.8 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.3 }}
               />
               <div>
-                <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-100">
+                <motion.h3
+                  className="text-2xl font-bold text-white"
+                  whileHover={{ scale: 1.05 }}
+                >
                   {exp.role}
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                  {exp.company}
-                </p>
-                <p className="text-sm text-gray-500 dark:text-gray-400 italic">
-                  {exp.duration}
-                </p>
+                </motion.h3>
+                <p className="text-gray-300 text-lg">{exp.company}</p>
+                <p className="text-sm text-gray-400 italic">{exp.duration}</p>
               </div>
             </div>
 
-            <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 text-sm">
+            <ul className="list-disc list-inside text-gray-100 text-lg space-y-2">
               {exp.description.map((point, i) => (
-                <li key={i} className="mb-1">
+                <motion.li
+                  key={i}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: false, amount: 0.3 }}
+                  transition={{ duration: 0.6, delay: i * 0.1 }}
+                >
                   {point}
-                </li>
+                </motion.li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

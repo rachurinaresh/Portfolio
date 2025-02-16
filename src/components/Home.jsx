@@ -26,7 +26,7 @@ const Home = () => {
         <div className="flex-1">
           <h1 className="text-5xl md:text-6xl font-bold">
             Hi, I'm <span className="text-blue-400">Naresh</span> <br />
-            <span className="text-white">Rachuri</span>
+            <span className="text-white">Rachuri 👋</span>
           </h1>
 
           <h2 className="text-xl md:text-2xl font-semibold text-blue-400 mt-2">

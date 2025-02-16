@@ -31,41 +31,40 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="min-h-screen bg-gray-50 dark:bg-gray-900 px-6 py-12 text-center"
+      className="min-h-screen bg-gray-900 px-6 py-16 flex flex-col items-center"
     >
-      <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100 mb-10">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-12">
         🚀 My Projects
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105 hover:shadow-2xl"
+            className="relative bg-gray-800 shadow-xl rounded-xl p-8 transition-transform transform hover:scale-105 hover:shadow-2xl"
           >
-            <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-2">
+            <h2 className="text-2xl font-bold text-white mb-3">
               {project.title}
             </h2>
-            <p className="text-gray-600 dark:text-gray-300 text-sm">
-              {project.description}
-            </p>
-            <div className="mt-4 flex flex-wrap gap-2 justify-center">
+            <p className="text-gray-400 text-sm">{project.description}</p>
+
+            <div className="mt-4 flex flex-wrap gap-2">
               {project.tech.map((tech, i) => (
                 <span
                   key={i}
-                  className="px-3 py-1 text-sm font-medium text-white bg-blue-500 rounded-full"
+                  className="px-3 py-1 text-sm font-medium text-white bg-blue-600 rounded-full"
                 >
                   {tech}
                 </span>
               ))}
             </div>
 
-            <div className="mt-6 flex justify-center space-x-4">
+            <div className="mt-6 flex justify-between items-center">
               <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 dark:text-gray-300 hover:text-blue-500 transition"
+                className="text-gray-400 hover:text-white transition"
               >
                 <FaGithub className="w-6 h-6" />
               </a>
@@ -73,7 +72,7 @@ const Projects = () => {
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-600 dark:text-gray-300 hover:text-green-500 transition"
+                className="text-gray-400 hover:text-green-400 transition"
               >
                 <FaExternalLinkAlt className="w-6 h-6" />
               </a>
