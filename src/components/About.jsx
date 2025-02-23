@@ -10,11 +10,7 @@ const About = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        } else {
-          setIsVisible(false);
-        }
+        setIsVisible(entry.isIntersecting);
       },
       { threshold: 0.4 }
     );
@@ -33,7 +29,7 @@ const About = () => {
   return (
     <div
       ref={sectionRef}
-      className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gray-50 dark:bg-gray-900 px-6 md:px-20"
+      className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gray-50 dark:bg-gray-900 px-6 md:px-20 overflow-hidden"
     >
       <motion.div
         initial={{ x: -150, opacity: 0 }}
@@ -43,14 +39,14 @@ const About = () => {
       >
         <img
           src={certificateImage}
-          alt="Naresh Rachuri receiving Runner-up certification"
+          alt="Naresh Rachuri receiving certification"
           className="w-80 h-80 md:w-96 md:h-96 rounded-lg object-cover border-4 border-gray-300 dark:border-gray-700 shadow-lg"
         />
       </motion.div>
 
       <motion.div
-        initial={{ x: 150, opacity: 0 }}
-        animate={isVisible ? { x: 0, opacity: 1 } : { x: 150, opacity: 0 }}
+        initial={{ x: 50, opacity: 0 }}
+        animate={isVisible ? { x: 0, opacity: 1 } : { x: 50, opacity: 0 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
         className="flex-1 text-center md:text-left"
       >
@@ -59,11 +55,10 @@ const About = () => {
         </h1>
 
         <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl">
-          I am Naresh Rachuri, a Full Stack Developer & AI Enthusiast with
-          expertise in React, .NET Core, Flask, and MySQL. Currently, I am
-          pursuing my Master's in Computer Science at The University of Texas at
-          Arlington (UTA), specializing in AI-driven solutions, automation, and
-          cloud-based applications.
+          I am Naresh Rachuri, a Full Stack Developer and AI Enthusiast with a
+          commitment to clean, efficient code and collaborative development. I
+          focus on automation and continually seek new challenges to expand my
+          technical expertise.
         </p>
 
         <div className="mt-8 max-w-3xl">
@@ -72,16 +67,16 @@ const About = () => {
           </h2>
           <ul className="list-none space-y-2 text-lg text-gray-600 dark:text-gray-300">
             <li>
-              <FaTrophy className="inline-block text-yellow-500 mr-2" />{" "}
-              Runner-up in a Techigai Hackathon for the Releasy Project, an
+              <FaTrophy className="inline-block text-yellow-500 mr-2" />
+              Runner-up in a Techigai Hackathon for the Releasy Project – an
               automated release notes generation tool.
             </li>
             <li>
-              <FaTrophy className="inline-block text-yellow-500 mr-2" />{" "}
+              <FaTrophy className="inline-block text-yellow-500 mr-2" />
               Employee of the Quarter for outstanding contributions.
             </li>
             <li>
-              <FaTrophy className="inline-block text-yellow-500 mr-2" />{" "}
+              <FaTrophy className="inline-block text-yellow-500 mr-2" />
               Finalist at Code Gladiators 2021 for problem-solving.
             </li>
           </ul>
@@ -89,14 +84,18 @@ const About = () => {
 
         <div className="mt-8 max-w-3xl">
           <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
-            🎯 Work Philosophy
+            🎓 Education
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300">
-            I believe in AI-driven development, automation, and scalability. My
-            approach focuses on writing clean, efficient code and solving
-            complex problems through collaborative development and AI
-            integration.
-          </p>
+          <ul className="list-disc pl-5 space-y-2 text-lg text-gray-600 dark:text-gray-300">
+            <li>
+              Master's in Computer Science ,The University of Texas at Arlington
+              (UTA) - ( 2024 to Expected December 2025 )
+            </li>
+            <li>
+              Bachelor's in Computer Science and Engineering, CMR Group Of
+              Institutions - (2018 to 2022 )
+            </li>
+          </ul>
         </div>
       </motion.div>
     </div>
