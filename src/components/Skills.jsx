@@ -109,6 +109,10 @@ const Skills = () => {
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
     },
     {
+      name: "MSSQL",
+      img: "https://static.cdnlogo.com/logos/m/6/microsoft-sql-server.svg",
+    },
+    {
       name: "Entity Framework",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
     },

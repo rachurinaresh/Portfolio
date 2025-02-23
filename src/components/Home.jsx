@@ -60,8 +60,9 @@ const Home = () => {
 
           <div className="mt-8 flex flex-wrap gap-4 items-baseline">
             <a
-              href="/Naresh-Rachuri-Resume.pdf"
+              href="https://drive.google.com/file/d/1_Dg-bDwtYJtdKZfKGsQiT8QEfpDiRRs8/view?usp=drive_link"
               download
+              target="_blank"
               className="relative flex items-center justify-center px-6 py-3 rounded-xl text-lg font-medium text-white 
                         bg-blue-500 hover:bg-blue-600 transition duration-300"
             >

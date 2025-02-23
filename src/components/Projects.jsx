@@ -5,25 +5,15 @@ const projects = [
     title: "Recognizing Scholars",
     description:
       "AI-driven award prediction system that uses LLM fine-tuning and automation to recommend awards based on academic profiles.",
-    tech: ["Python", "LLMs", "Fine-Tuning", "Flask", "MySQL"],
-    github: "https://github.com/yourusername/recognizing-scholars",
-    live: "https://yourliveproject.com",
+    tech: ["Python", "LLMs", "Fine-Tuning", "Flask", "React", "MySQL"],
+    github: "https://github.com/rachurinaresh",
   },
   {
     title: "Releasy",
     description:
       "Hackathon-winning project for automated release notes generation, reducing manual effort by 70% through AI-driven analysis.",
-    tech: ["React", "Node.js", "AI Automation"],
-    github: "https://github.com/yourusername/releasy",
-    live: "https://yourliveproject.com",
-  },
-  {
-    title: "Browser Extension for Patient Data",
-    description:
-      "A browser extension that scrapes patient demographic data, integrates with EHR systems, and enhances healthcare workflows.",
-    tech: ["JavaScript", "Web Scraping", "Chrome Extension", "React"],
-    github: "https://github.com/yourusername/browser-extension",
-    live: "https://yourliveproject.com",
+    tech: ["React", "ASP.NET", "MS SQL"],
+    github: "https://github.com/rachurinaresh",
   },
 ];
 
@@ -67,14 +57,6 @@ const Projects = () => {
                 className="text-gray-400 hover:text-white transition"
               >
                 <FaGithub className="w-6 h-6" />
-              </a>
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-green-400 transition"
-              >
-                <FaExternalLinkAlt className="w-6 h-6" />
               </a>
             </div>
           </div>
