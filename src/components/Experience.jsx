@@ -38,14 +38,14 @@ const Experience = () => {
   return (
     <motion.div
       ref={sectionRef}
-      className="relative p-10 min-h-screen bg-gradient-to-br from-gray-900 to-black flex flex-col items-center"
+      className="relative p-6 md:p-10 min-h-screen bg-gradient-to-br from-gray-900 to-black flex flex-col items-center"
       initial={{ opacity: 0.8 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: false, amount: 0.3 }} // Ensures it replays every time the section is visible
+      viewport={{ once: false, amount: 0.3 }}
       transition={{ duration: 1.2, ease: "easeOut" }}
     >
       <motion.h2
-        className="text-4xl font-extrabold text-center mb-12 text-white"
+        className="text-3xl md:text-4xl font-extrabold text-center mb-8 md:mb-12 text-white"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false, amount: 0.3 }}
@@ -54,7 +54,7 @@ const Experience = () => {
         Experience
       </motion.h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 w-full max-w-6xl">
         {myExperiences.map((exp, index) => (
           <motion.div
             key={index}
@@ -62,31 +62,34 @@ const Experience = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.2 }}
-            className={`relative p-10 rounded-2xl shadow-xl border ${exp.borderColor} backdrop-blur-xl bg-gradient-to-r ${exp.gradient} transition-transform transform hover:scale-105`}
+            className={`relative p-6 md:p-10 rounded-2xl shadow-xl border ${exp.borderColor} backdrop-blur-xl bg-gradient-to-r ${exp.gradient} transition-transform transform hover:scale-105`}
           >
-            {/* Content */}
-            <div className="flex items-center space-x-4 mb-6">
+            <div className="flex items-center space-x-4 mb-4 md:mb-6">
               <motion.img
                 src={exp.logo}
                 alt={exp.company}
-                className="w-16 h-16 object-contain bg-white p-2 rounded-full shadow-md"
+                className="w-14 h-14 md:w-16 md:h-16 object-contain bg-white p-2 rounded-full shadow-md"
                 initial={{ scale: 0.8 }}
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.3 }}
               />
               <div>
                 <motion.h3
-                  className="text-2xl font-bold text-white"
+                  className="text-xl md:text-2xl font-bold text-white"
                   whileHover={{ scale: 1.05 }}
                 >
                   {exp.role}
                 </motion.h3>
-                <p className="text-gray-300 text-lg">{exp.company}</p>
-                <p className="text-sm text-gray-400 italic">{exp.duration}</p>
+                <p className="text-gray-300 text-sm md:text-lg">
+                  {exp.company}
+                </p>
+                <p className="text-xs md:text-sm text-gray-400 italic">
+                  {exp.duration}
+                </p>
               </div>
             </div>
 
-            <ul className="list-disc list-inside text-gray-100 text-lg space-y-2">
+            <ul className="list-disc list-inside text-gray-100 text-sm md:text-lg space-y-1 md:space-y-2">
               {exp.description.map((point, i) => (
                 <motion.li
                   key={i}

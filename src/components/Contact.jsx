@@ -72,26 +72,34 @@ const Contact = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
       {/* Main Contact Section */}
-      <div className="flex-grow flex flex-col justify-center items-center px-6">
-        <h2 className="text-4xl font-bold text-white mb-6">Contact Me</h2>
+      <div className="flex-grow flex flex-col justify-center items-center px-4 sm:px-6">
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+          Contact Me
+        </h2>
 
-        <div className="w-full max-w-lg bg-gray-800 p-6 rounded-lg shadow-lg">
+        <div className="w-full max-w-md sm:max-w-lg bg-gray-800 p-5 sm:p-6 rounded-lg shadow-lg">
           {sentMessage && (
             <p className="text-green-400 text-center mb-4">
               ✅ Message sent successfully!
             </p>
           )}
-          <form ref={form} onSubmit={handleSendEmail} className="space-y-4">
+          <form
+            ref={form}
+            onSubmit={handleSendEmail}
+            className="space-y-3 sm:space-y-4"
+          >
             <div>
               <label className="block text-sm font-semibold">Your Name</label>
               <input
                 type="text"
                 value={userName}
                 onChange={(e) => setUserName(e.target.value)}
-                className="block w-full bg-gray-700 border border-gray-600 rounded-md px-3 py-2 mt-1 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="block w-full bg-gray-700 border border-gray-600 rounded-md px-3 py-2 text-sm sm:text-base text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               {errors.userName && (
-                <p className="text-red-400 text-sm">{errors.userName}</p>
+                <p className="text-red-400 text-xs sm:text-sm">
+                  {errors.userName}
+                </p>
               )}
             </div>
 
@@ -103,10 +111,12 @@ const Contact = () => {
                 type="email"
                 value={userEmail}
                 onChange={(e) => setUserEmail(e.target.value)}
-                className="block w-full bg-gray-700 border border-gray-600 rounded-md px-3 py-2 mt-1 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="block w-full bg-gray-700 border border-gray-600 rounded-md px-3 py-2 text-sm sm:text-base text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               {errors.userEmail && (
-                <p className="text-red-400 text-sm">{errors.userEmail}</p>
+                <p className="text-red-400 text-xs sm:text-sm">
+                  {errors.userEmail}
+                </p>
               )}
             </div>
 
@@ -118,17 +128,19 @@ const Contact = () => {
                 rows={4}
                 value={userMessage}
                 onChange={(e) => setUserMessage(e.target.value)}
-                className="block w-full bg-gray-700 border border-gray-600 rounded-md px-3 py-2 mt-1 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="block w-full bg-gray-700 border border-gray-600 rounded-md px-3 py-2 text-sm sm:text-base text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               {errors.userMessage && (
-                <p className="text-red-400 text-sm">{errors.userMessage}</p>
+                <p className="text-red-400 text-xs sm:text-sm">
+                  {errors.userMessage}
+                </p>
               )}
             </div>
 
             <div>
               <button
                 type="submit"
-                className="w-full bg-blue-500 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-600 transition"
+                className="w-full bg-blue-500 text-white px-5 py-2 sm:py-3 rounded-lg text-sm sm:text-base font-medium hover:bg-blue-600 transition"
               >
                 Send Message
               </button>

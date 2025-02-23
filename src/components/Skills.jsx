@@ -86,7 +86,7 @@ const Skills = () => {
     },
     {
       name: "Tailwind CSS",
-      img: "https://imgs.search.brave.com/Z5KzvnbDLcIM0PWp7CcoTA7Rp3go5U8SMilVC0FGycQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9k/L2Q1L1RhaWx3aW5k/X0NTU19Mb2dvLnN2/Zw",
+      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
     },
     {
       name: "Bootstrap",
@@ -140,7 +140,7 @@ const Skills = () => {
     >
       {/* Section Title */}
       <motion.h2
-        className="text-5xl font-bold text-white mb-12 tracking-wider uppercase"
+        className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-10 tracking-wider uppercase"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -20 }}
         transition={{ duration: 0.6 }}
@@ -151,19 +151,14 @@ const Skills = () => {
       {/* Skills Container */}
       <motion.div
         key={triggerKey} // Force component to re-render when animation restarts
-        className="relative grid gap-8 w-full max-w-7xl px-6 justify-center"
-        style={{
-          gridTemplateColumns: "repeat(auto-fit, minmax(100px, 1fr))",
-          justifyItems: "center",
-          alignItems: "center",
-        }}
+        className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 sm:gap-6 md:gap-8 w-full max-w-7xl px-6"
       >
         {skills.map((skill, index) => {
           const initialPos = getRandomStartPosition();
           return (
             <motion.div
               key={index}
-              className="relative flex flex-col items-center justify-center w-24 h-24 md:w-28 md:h-28 p-4 bg-gray-900 rounded-full border border-gray-700 shadow-lg hover:shadow-blue-500 transition-all"
+              className="flex flex-col items-center justify-center w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 p-4 bg-gray-900 rounded-full border border-gray-700 shadow-lg hover:shadow-blue-500 transition-all"
               initial={
                 isVisible
                   ? { x: initialPos.x, y: initialPos.y, opacity: 0 }
@@ -179,9 +174,9 @@ const Skills = () => {
               <img
                 src={skill.img}
                 alt={skill.name}
-                className="w-12 h-12 object-contain"
+                className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
               />
-              <p className="text-white text-sm mt-2 text-center">
+              <p className="text-white text-xs sm:text-sm mt-2 text-center">
                 {skill.name}
               </p>
             </motion.div>
