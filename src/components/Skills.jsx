@@ -4,16 +4,16 @@ import { motion } from "framer-motion";
 const Skills = () => {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [triggerKey, setTriggerKey] = useState(0); // Key to force re-render
+  const [triggerKey, setTriggerKey] = useState(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(false); // Reset animation
+          setIsVisible(false);
           setTimeout(() => {
             setIsVisible(true);
-            setTriggerKey((prev) => prev + 1); // Force re-render to restart animation
+            setTriggerKey((prev) => prev + 1);
           }, 200);
         }
       },
@@ -122,13 +122,12 @@ const Skills = () => {
     },
   ];
 
-  // Random initial position outside viewport
   const getRandomStartPosition = () => {
     const positions = [
-      { x: -500, y: 0 }, // Left
-      { x: 500, y: 0 }, // Right
-      { x: 0, y: -500 }, // Top
-      { x: 0, y: 500 }, // Bottom
+      { x: -500, y: 0 },
+      { x: 500, y: 0 },
+      { x: 0, y: -500 },
+      { x: 0, y: 500 },
     ];
     return positions[Math.floor(Math.random() * positions.length)];
   };
@@ -138,7 +137,6 @@ const Skills = () => {
       ref={sectionRef}
       className="relative bg-black min-h-screen flex flex-col items-center justify-center overflow-hidden px-6"
     >
-      {/* Section Title */}
       <motion.h2
         className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-10 tracking-wider uppercase"
         initial={{ opacity: 0, y: -20 }}
@@ -148,9 +146,8 @@ const Skills = () => {
         Technical Skills
       </motion.h2>
 
-      {/* Skills Container */}
       <motion.div
-        key={triggerKey} // Force component to re-render when animation restarts
+        key={triggerKey}
         className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 sm:gap-6 md:gap-8 w-full max-w-7xl px-6"
       >
         {skills.map((skill, index) => {

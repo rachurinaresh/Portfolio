@@ -32,7 +32,7 @@ const projects = [
     ],
     github: "https://github.com/rachurinaresh",
     image:
-      "https://imgs.search.brave.com/ELPgygT4WqNpiaN_3J4gUxHswJ2kYVIi4gH2puIk-bo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMw/NDM3MTM0OC9waG90/by93ZWJzaXRlLWRp/YWdyYW0uanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTlFd0xs/YWp5NHI5YWtfbm1j/TGJpNjZ1czJ0ancz/NUJ6RGU5ZEFSQWNM/cjQ9", // Replace with your image URL
+      "https://imgs.search.brave.com/ELPgygT4WqNpiaN_3J4gUxHswJ2kYVIi4gH2puIk-bo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMw/NDM3MTM0OC9waG90/by93ZWJzaXRlLWRp/YWdyYW0uanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTlFd0xs/YWp5NHI5YWtfbm1j/TGJpNjZ1czJ0ancz/NUJ6RGU5ZEFSQWNM/cjQ9",
   },
 ];
 
