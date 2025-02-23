@@ -46,7 +46,6 @@ const About = () => {
       ref={sectionRef}
       className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gray-50 dark:bg-gray-900 px-6 md:px-20 overflow-hidden"
     >
-      {/* Image Section */}
       <motion.div
         initial={{ x: -150, opacity: 0 }}
         animate={isVisible ? { x: 0, opacity: 1 } : { x: -150, opacity: 0 }}
@@ -60,7 +59,6 @@ const About = () => {
         />
       </motion.div>
 
-      {/* Text Content */}
       <motion.div
         initial={{ x: 50, opacity: 0 }}
         animate={isVisible ? { x: 0, opacity: 1 } : { x: 50, opacity: 0 }}
@@ -78,7 +76,6 @@ const About = () => {
           technical expertise.
         </p>
 
-        {/* Achievements Section */}
         <div className="mt-8 max-w-3xl mx-auto">
           <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
             🏆 Achievements
@@ -100,7 +97,6 @@ const About = () => {
           </ul>
         </div>
 
-        {/* Education Section */}
         <div className="mt-8 max-w-3xl mx-auto">
           <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
             🎓 Education

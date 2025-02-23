@@ -5,7 +5,6 @@ import profileImage from "../assets/images/profile.jpeg";
 const Home = () => {
   return (
     <div className="relative min-h-screen flex flex-col md:flex-row justify-center items-center text-left overflow-hidden pt-16 md:pt-20 bg-black">
-      {/* Background Video */}
       <video
         className="absolute top-20 left-0 w-full h-full object-cover"
         autoPlay
@@ -19,15 +18,10 @@ const Home = () => {
         />
       </video>
 
-      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-      {/* Decorative Blur Box */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-56 sm:w-80 sm:h-64 md:w-96 md:h-80 bg-black/60 backdrop-blur-3xl rounded-lg flex items-center justify-center"></div>
-
-      {/* Content Section */}
       <div className="relative z-10 px-6 md:px-20 text-white flex flex-col md:flex-row justify-center items-center w-full">
-        {/* Text Section */}
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
             Hi, I'm <span className="text-blue-400">Naresh</span> <br />
@@ -63,7 +57,6 @@ const Home = () => {
             across all screen sizes.
           </p>
 
-          {/* Button Section */}
           <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-4 items-center justify-center md:justify-start">
             <a
               href="https://drive.google.com/file/d/1_Dg-bDwtYJtdKZfKGsQiT8QEfpDiRRs8/view?usp=drive_link"
@@ -88,7 +81,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Image Section */}
         <div className="flex-1 flex justify-center mt-10 md:mt-0">
           <img
             src={profileImage}

@@ -1,23 +1,41 @@
 import { FaGithub } from "react-icons/fa";
-
+import portfolilo from "../assets/images/portfolio.webp";
+import award from "../assets/images/award.webp";
+import bugs from "../assets/images/bugs.webp";
 const projects = [
   {
     title: "Recognizing Scholars",
     description:
       "AI-driven award prediction system that uses LLM fine-tuning and automation to recommend awards based on academic profiles.",
-    tech: ["Python", "LLMs", "Fine-Tuning", "Flask", "React", "MySQL"],
+    tech: [
+      "Python",
+      "LLMs",
+      "Fine-Tuning",
+      "Flask",
+      "React",
+      "MySQL",
+      "Selenium WebDriver",
+    ],
     github: "",
-    image:
-      "https://imgs.search.brave.com/dqo_NXYY6NNE62z0hEJLEGxiNqdVxHV4Sl8R1nxAAfI/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9yaXNp/bmctc2Nob2xhcnMu/c2FudGFyb3NhLmVk/dS9zaXRlcy9yaXNp/bmctc2Nob2xhcnMu/c2FudGFyb3NhLmVk/dS9maWxlcy9pbmxp/bmUtaW1hZ2VzLzIw/MjIlMjBSZWVudHJ5/JTIwQ29uZmVyZW5j/ZSUyMFNhbiUyMEZy/YW5jaXNjby1XNDUw/cHhfMS5qcGc",
+    image: award,
   },
   {
-    title: "Releasy",
+    title: "RelEasy",
     description:
       "Releasy integrates with JIRA to automatically fetch the necessary project tickets for release note generation. It offers users the ability to edit and customize the generated notes for accuracy. Once finalized, the release notes can be exported as a professional PDF.",
-    tech: ["React", "ASP.NET", "MS SQL", "Typescript"],
-    github: "https://github.com/rachurinaresh",
-    image:
-      "https://imgs.search.brave.com/g6KibHvDQx3W9URfpQgKRdVcCzBd-CLUAi7GxGNs8mk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS82/NzYyMTE5ZTFmYmZi/MTg2ZDIxNzRiNmEv/Njc2MjExOWUxZmJm/YjE4NmQyMTc2YWY3/XzY3MzM1OTlhODhl/Y2U3ZjFkOTAyZTZj/Yl82MjA0M2VhNWYw/ZGRmMTAyNDVkOTdi/ZjJfbWljcm9zb2Z0/LnBuZw",
+    tech: [
+      "React",
+      "Redux",
+      "ASP.NET",
+      "MS SQL",
+      "Typescript",
+      "Jira",
+      "Bootstrap",
+      "Material UI",
+      "TinyMCE",
+    ],
+    github: "https://github.com/rachurinaresh/RelEasy",
+    image: bugs,
   },
   {
     title: "My Portfolio",
@@ -30,9 +48,8 @@ const projects = [
       "Responsive Design",
       "React Icons",
     ],
-    github: "https://github.com/rachurinaresh",
-    image:
-      "https://imgs.search.brave.com/ELPgygT4WqNpiaN_3J4gUxHswJ2kYVIi4gH2puIk-bo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMw/NDM3MTM0OC9waG90/by93ZWJzaXRlLWRp/YWdyYW0uanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTlFd0xs/YWp5NHI5YWtfbm1j/TGJpNjZ1czJ0ancz/NUJ6RGU5ZEFSQWNM/cjQ9",
+    github: "https://github.com/rachurinaresh/Portfolio",
+    image: portfolilo,
   },
 ];
 
@@ -43,7 +60,7 @@ const Projects = () => {
       className="min-h-screen bg-gray-900 px-6 py-16 flex flex-col items-center"
     >
       <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-12">
-        🚀 My Projects
+        🚀 Projects
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
@@ -52,7 +69,6 @@ const Projects = () => {
             key={index}
             className="relative bg-gray-800/50 backdrop-blur-md rounded-xl overflow-hidden shadow-xl transform hover:scale-105 transition-all duration-300 group border border-gray-700/50 hover:border-blue-500/50"
           >
-            {/* Image Header with Title Overlay */}
             <div className="relative h-48 w-full overflow-hidden">
               <img
                 src={project.image}

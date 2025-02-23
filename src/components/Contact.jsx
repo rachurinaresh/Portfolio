@@ -71,7 +71,6 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
-      {/* Main Contact Section */}
       <div className="flex-grow flex flex-col justify-center items-center px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
           Contact Me
