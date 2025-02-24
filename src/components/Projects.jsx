@@ -27,6 +27,7 @@ const projects = [
       "React",
       "Redux",
       "ASP.NET",
+      "Atlassian SDK",
       "MS SQL",
       "Typescript",
       "Jira",
