@@ -126,7 +126,7 @@ const Skills = () => {
     },
     {
       name: "Fine-Tuning",
-      img: "https://upload.wikimedia.org/wikipedia/commons/5/58/Neural_network.svg",
+      img: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
     },
   ];
 
