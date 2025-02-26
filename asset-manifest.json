@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/rachurinaresh/Portfolio/static/css/main.00dd4798.css",
+    "main.js": "/rachurinaresh/Portfolio/static/js/main.9ccb30c7.js",
+    "static/js/453.1407b060.chunk.js": "/rachurinaresh/Portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/profile.jpeg": "/rachurinaresh/Portfolio/static/media/profile.d84eae5183439e1e5548.jpeg",
+    "static/media/BizOrders.png": "/rachurinaresh/Portfolio/static/media/BizOrders.7caa479f939e0d505526.png",
+    "static/media/certificate-presenting.jpeg": "/rachurinaresh/Portfolio/static/media/certificate-presenting.b94ce2e695c3d339e702.jpeg",
+    "static/media/bugs.webp": "/rachurinaresh/Portfolio/static/media/bugs.64471a564eb58abc3fd0.webp",
+    "static/media/portfolio.webp": "/rachurinaresh/Portfolio/static/media/portfolio.808224115a99b4cf32ae.webp",
+    "static/media/award.webp": "/rachurinaresh/Portfolio/static/media/award.98348189741092e6f103.webp",
+    "index.html": "/rachurinaresh/Portfolio/index.html",
+    "main.00dd4798.css.map": "/rachurinaresh/Portfolio/static/css/main.00dd4798.css.map",
+    "main.9ccb30c7.js.map": "/rachurinaresh/Portfolio/static/js/main.9ccb30c7.js.map",
+    "453.1407b060.chunk.js.map": "/rachurinaresh/Portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00dd4798.css",
+    "static/js/main.9ccb30c7.js"
+  ]
+}
