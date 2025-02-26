@@ -44,7 +44,7 @@ const About = () => {
   return (
     <div
       ref={sectionRef}
-      className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gray-50 dark:bg-gray-900 px-6 md:px-20 overflow-hidden"
+      className="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gray-900 dark:bg-gray-900 px-6 md:px-20 overflow-hidden"
     >
       <motion.div
         initial={{ x: -150, opacity: 0 }}

@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed w-full bg-gray-100 dark:bg-gray-900 shadow-md z-50">
+    <nav className="fixed w-full bg-gray-900 dark:bg-gray-900 shadow-md z-50">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center h-16">
         <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
           Naresh Rachuri
