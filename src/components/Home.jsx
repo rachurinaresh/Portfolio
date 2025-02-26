@@ -59,7 +59,7 @@ const Home = () => {
 
           <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-4 items-center justify-center md:justify-start">
             <a
-              href="https://drive.google.com/file/d/1_Dg-bDwtYJtdKZfKGsQiT8QEfpDiRRs8/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1RsXKPCPU1_wvkVu6q05ODnbjM3oZuC3M/view?usp=drive_link"
               download
               target="_blank"
               className="flex items-center justify-center px-5 py-2 sm:px-6 sm:py-3 rounded-xl text-base sm:text-lg font-medium text-white bg-blue-500 hover:bg-blue-600 transition duration-300"
