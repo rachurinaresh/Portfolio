@@ -58,7 +58,7 @@ const projects = [
       "jQuery",
       "Bootstrap",
     ],
-    github: "https://github.com/rachurinaresh/Portfolio",
+    github: "https://github.com/rachurinaresh/BizOrders_MVC",
     image: bizOrders,
   },
   {
