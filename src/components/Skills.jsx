@@ -61,7 +61,15 @@ const Skills = () => {
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg",
     },
     {
-      name: ".NET",
+      name: "ASP.NET",
+      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
+    },
+    {
+      name: "ASP.NET MVC",
+      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
+    },
+    {
+      name: "Entity Framework",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
     },
     {
@@ -113,12 +121,12 @@ const Skills = () => {
       img: "https://static.cdnlogo.com/logos/m/6/microsoft-sql-server.svg",
     },
     {
-      name: "Entity Framework",
-      img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
-    },
-    {
       name: "Selenium",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg",
+    },
+    {
+      name: "Fine-Tuning",
+      img: "https://upload.wikimedia.org/wikipedia/commons/5/58/Neural_network.svg",
     },
   ];
 

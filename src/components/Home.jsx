@@ -65,7 +65,7 @@ const Home = () => {
               className="flex items-center justify-center px-5 py-2 sm:px-6 sm:py-3 rounded-xl text-base sm:text-lg font-medium text-white bg-blue-500 hover:bg-blue-600 transition duration-300"
             >
               <FaDownload className="mr-2 sm:mr-3" />
-              Download Resume
+              Resume
             </a>
             <div className="flex space-x-5 sm:space-x-6 mt-4 sm:mt-0">
               <a
