@@ -65,11 +65,11 @@ const About = () => {
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
         className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left p-4"
       >
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 dark:text-gray-100 mb-6">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-100 dark:text-gray-100 mb-6">
           About Me
         </h1>
 
-        <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg text-gray-300 dark:text-gray-300 max-w-2xl mx-auto">
           I am Naresh Rachuri, a Full Stack Developer and AI Enthusiast with a
           commitment to clean, efficient code and collaborative development. I
           focus on automation and continually seek new challenges to expand my
@@ -77,13 +77,13 @@ const About = () => {
         </p>
 
         <div className="mt-8 max-w-3xl mx-auto">
-          <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
+          <h2 className="text-xl sm:text-2xl font-semibold text-gray-100 dark:text-gray-100 mb-4">
             🏆 Achievements
           </h2>
-          <ul className="list-none space-y-2 text-base sm:text-lg text-gray-600 dark:text-gray-300">
+          <ul className="list-none space-y-2 text-base sm:text-lg text-gray-300 dark:text-gray-300">
             <li>
               <FaTrophy className="inline-block text-yellow-500 mr-2" />
-              Runner-up in a Techigai Hackathon for the Releasy Project – an
+              Runner-up in a Techigai Hackathon for the Releasy Project - an
               automated release notes generation tool.
             </li>
             <li>
@@ -98,10 +98,10 @@ const About = () => {
         </div>
 
         <div className="mt-8 max-w-3xl mx-auto">
-          <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
+          <h2 className="text-xl sm:text-2xl font-semibold text-gray-100 dark:text-gray-100 mb-4">
             🎓 Education
           </h2>
-          <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg text-gray-600 dark:text-gray-300">
+          <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg text-gray-300 dark:text-gray-300">
             <li>
               Master's in Computer Science, The University of Texas at Arlington
               (UTA) - (2024 to Expected December 2025)

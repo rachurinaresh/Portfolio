@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full bg-gray-900 dark:bg-gray-900 shadow-md z-50">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center h-16">
-        <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
+        <h1 className="text-2xl font-bold text-gray-100 dark:text-gray-100">
           Naresh Rachuri
         </h1>
 
@@ -20,7 +20,7 @@ const Navbar = () => {
                 to={item.toLowerCase()}
                 smooth={true}
                 duration={500}
-                className="text-gray-700 dark:text-gray-300 cursor-pointer hover:text-blue-500 transition"
+                className="text-gray-300 dark:text-gray-300 cursor-pointer hover:text-blue-500 transition"
               >
                 {item}
               </Link>
@@ -30,9 +30,9 @@ const Navbar = () => {
 
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
           {isOpen ? (
-            <FaTimes className="w-6 h-6 text-gray-700 dark:text-gray-300" />
+            <FaTimes className="w-6 h-6 text-gray-300 dark:text-gray-300" />
           ) : (
-            <FaBars className="w-6 h-6 text-gray-700 dark:text-gray-300" />
+            <FaBars className="w-6 h-6 text-gray-300 dark:text-gray-300" />
           )}
         </button>
       </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
                   to={item.toLowerCase()}
                   smooth={true}
                   duration={500}
-                  className="text-gray-700 dark:text-gray-300 cursor-pointer hover:text-blue-500 transition text-lg"
+                  className="text-gray-300 dark:text-gray-300 cursor-pointer hover:text-blue-500 transition text-lg"
                   onClick={() => setIsOpen(false)}
                 >
                   {item}
