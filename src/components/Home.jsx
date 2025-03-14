@@ -20,7 +20,7 @@ const Home = () => {
 
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-56 sm:w-80 sm:h-64 md:w-96 md:h-80 bg-black/60 backdrop-blur-3xl rounded-lg flex items-center justify-center"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-80 sm:w-80 sm:h-80 md:w-96 md:h-80 bg-black/60 backdrop-blur-3xl rounded-lg flex items-center justify-center"></div>
       <div className="relative z-10 px-6 md:px-20 text-white flex flex-col md:flex-row justify-center items-center w-full">
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
