@@ -88,6 +88,10 @@ const About = () => {
             </li>
             <li>
               <FaTrophy className="inline-block text-yellow-500 mr-2" />
+              Prompt Design in Vertex AI Skill Badge — Google Cloud
+            </li>
+            <li>
+              <FaTrophy className="inline-block text-yellow-500 mr-2" />
               Employee of the Quarter for outstanding contributions.
             </li>
             <li>
