@@ -111,8 +111,8 @@ const About = () => {
               (UTA) - (2024 to Expected December 2025)
             </li>
             <li>
-              Bachelor's in Computer Science and Engineering, CMR Group Of
-              Institutions - (2018 to 2022)
+              Bachelor's in Computer Science and Engineering, Jawaharlal Nehru
+              Technological University Hyderabad (JNTUH) - (2018 to 2022)
             </li>
           </ul>
         </div>
