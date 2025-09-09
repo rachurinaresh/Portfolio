@@ -7,7 +7,7 @@ const Experience = () => {
   const myExperiences = [
     {
       role: "Graduate Research Assistant",
-      company: "University of Texas at Arlington",
+      company: "Innovative Data Intelligence Research Laboratory",
       logo: "https://upload.wikimedia.org/wikipedia/commons/2/2b/University_of_Texas_at_Arlington_logo.svg",
       duration: "July 2024 - Present",
       description: [
