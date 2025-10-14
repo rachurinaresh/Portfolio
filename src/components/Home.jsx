@@ -67,7 +67,7 @@ const Home = () => {
               href="https://drive.google.com/file/d/1RsXKPCPU1_wvkVu6q05ODnbjM3oZuC3M/view?usp=drive_link"
               download
               target="_blank"
-              className="flex items-center justify-center px-5 py-2 sm:px-6 sm:py-3 rounded-xl text-base sm:text-lg font-medium text-white bg-blue-500 hover:bg-blue-600 transition duration-300"
+              className="flex items-center justify-center px-5 py-2 sm:px-6 sm:py-3 rounded-xl text-base sm:text-lg font-medium text-white bg-blue-500 hover:bg-blue-600 transition duration-300 d-none"
             >
               <FaDownload className="mr-2 sm:mr-3" />
               Resume
