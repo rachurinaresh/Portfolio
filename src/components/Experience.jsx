@@ -25,7 +25,7 @@ const Experience = () => {
       role: "Software Engineer",
       company: "Techigai Private Limited",
       logo: "https://techigai.io/wp-content/uploads/2021/08/logo.svg",
-      duration: "Sept 2021 - Dec 2023",
+      duration: "Sept 2020 - Dec 2023",
       description: [
         "Developed and deployed 2+ React applications with TypeScript and best practices to ensure scalability and maintainability.",
         "Built a cross-browser EHR extension (Chrome, Firefox, Edge, Safari) using web scraping to extract and analyze patient demographics and risks.",
