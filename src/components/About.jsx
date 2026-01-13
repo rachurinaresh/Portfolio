@@ -108,7 +108,7 @@ const About = () => {
           <ul className="list-disc pl-5 space-y-2 text-base sm:text-lg text-gray-300 dark:text-gray-300">
             <li>
               Master's in Computer Science, The University of Texas at Arlington
-              (UTA) - (2024 to Expected December 2025)
+              (UTA) - (2024 to 2025)
             </li>
             <li>
               Bachelor's in Computer Science and Engineering, Jawaharlal Nehru

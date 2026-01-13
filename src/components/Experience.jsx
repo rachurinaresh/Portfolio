@@ -9,7 +9,7 @@ const Experience = () => {
       role: "Graduate Research Assistant",
       company: "Innovative Data Intelligence Research Laboratory",
       logo: "https://upload.wikimedia.org/wikipedia/commons/2/2b/University_of_Texas_at_Arlington_logo.svg",
-      duration: "July 2024 - Present",
+      duration: "July 2024 - Dec 2025",
       description: [
         "Integrated MCP servers into award evaluation workflows, enabling context-aware AI predictions; improved retrieval efficiency by 40% and reduced manual data collection by 50%.",
         "Enhanced predictive modeling by fine-tuning GPT-4 datasets and optimizing LLaMA models with award-specific data, boosting eligibility predictions for 3,600+ awards.",
