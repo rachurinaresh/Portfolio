@@ -6,6 +6,21 @@ const Experience = () => {
 
   const myExperiences = [
     {
+      role: "Software Engineer",
+      company: "PalTech, Inc",
+      logo: "https://www.pal.tech/wp-content/uploads/2025/12/PalTech-SVG-New.svg",
+      duration: "Jan 2026 - Present",
+      description: [
+        "Created a document processing flow handling 1–1000 files per request; used parallel tasks to reduce response time from ~30s to <5s (~80% faster) and saved results using Dapper",
+        "Set up a JSON-based configuration to allow tenants to adjust UI fields and values dynamically, reducing manual updates by ~40%",
+        "Used LINQ to DB (Micro ORM) for efficient data retrieval, simplifying database access and improving query performance",
+        "Worked with Redux Toolkit Query (RTK Query) across 5+ API endpoints in React to handle data fetching and JSON-based form updates, improving data flow and reducing manual API handling",
+        "Diagnosed and resolved 8+ production issues by tracing data across UI, API, and database layers, working with clients to deliver timely fixes and improve system stability",
+      ],
+      gradient: "from-[#2A2D3E] to-[#475569]",
+      borderColor: "border-[#64748B]",
+    },
+    {
       role: "Graduate Research Assistant",
       company: "Innovative Data Intelligence Research Laboratory",
       logo: "https://upload.wikimedia.org/wikipedia/commons/2/2b/University_of_Texas_at_Arlington_logo.svg",
@@ -25,7 +40,7 @@ const Experience = () => {
       role: "Software Engineer",
       company: "Techigai Private Limited",
       logo: "https://techigai.io/wp-content/uploads/2021/08/logo.svg",
-      duration: "Sept 2020 - Dec 2023",
+      duration: "Sept 2021 - Dec 2023",
       description: [
         "Developed and deployed 2+ React applications with TypeScript and best practices to ensure scalability and maintainability.",
         "Built a cross-browser EHR extension (Chrome, Firefox, Edge, Safari) using web scraping to extract and analyze patient demographics and risks.",
